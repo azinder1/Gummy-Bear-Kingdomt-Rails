@@ -3,12 +3,20 @@
 <% end %>
 
 <div class="fill">
-  <h3>Products:</h3>
+  <h3 class = "title">Products:</h3>
   <% if @products.any? %>
+  <div class="row">
     <% @products.each do |product| %>
-      <h4><%= link_to product.name, product_path(product) %></h4>
-      <%= image_tag product.picture, :class => "thumb" %>
-    <% end %>
+        <div class="col s12 m4 product-index">
+          <div>
+            <div class="card-content black-text">
+              <h4><%= link_to product.name, product_path(product) %></h4>
+          <%= image_tag product.picture, :class => "thumb" %>
+        </div>
+      </div>
+    </div>
+          <% end %>
+   </div>
   <% else %>
     <h4>It appears that there aren't any products yet!</h4>
   <% end %>

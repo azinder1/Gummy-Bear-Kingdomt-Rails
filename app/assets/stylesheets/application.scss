@@ -8,7 +8,7 @@ body {
     background-repeat:   no-repeat;
     width:100%;
     height:100%;
-
+    font-family: 'Lobster', cursive;
 }
 
 .content {
@@ -20,19 +20,34 @@ body {
 .btn {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: monospace;
 }
 
 .fill {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 40px 40px 40px 40px;
 }
 
 .medium_image {
-  height: 400px;
+  height: 300px;
   width: auto;
 }
 
 .thumb {
   height: 80px;
   width: auto;
+}
+
+.welcome-image {
+  width: 500px;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.product-index{
+  border-right: 1px solid black;
+  height: 150px;
 }
