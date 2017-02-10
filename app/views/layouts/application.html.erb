@@ -11,7 +11,7 @@
   <body>
    <nav>
   <div class="nav-wrapper">
-    <span class="brand-logo center">    <%= link_to "Gummy Bear Kingdom", root_path %>
+    <span class="brand-logo center">    <%= link_to "Gummy Palace", root_path %>
 </span>
     <ul id="nav-mobile" class="left hide-on-med-and-down">
       <%= yield(:navbar) %>
@@ -20,7 +20,7 @@
 </nav>
  </div>
  <div class="container content">
-   <div class="container fill">
+   <div class="container">
      <%= flash[:notice] %>
      <%= yield %>
    </div>

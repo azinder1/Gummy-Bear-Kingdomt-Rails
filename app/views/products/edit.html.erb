@@ -2,7 +2,8 @@
   <li><%= link_to @product.name, product_path(@product) %></li>
   <li><%= link_to "Products", products_path %></li>
 <% end %>
+<div class="fill">
+  <h2>Edit Product</h2>
 
-<h2>Edit Product</h2>
-
-<%= render 'form' %>
+  <%= render 'form' %>
+</div>

@@ -4,7 +4,12 @@
   <li><%= link_to "Delete", product_path(@product), :data => {:confirm => "Are you sure you want to delete this product?", :method => "delete"} %></li>
 <% end %>
 
-<h4><%= @product.name %></h4>
-<p><strong><%= @product.description %></strong></p>
-<li><%= @product.cost %></li>
-<li><%= @product.country_origin %></li>
+
+<div class="fill">
+  <h4><%= @product.name %></h4>
+  <%= image_tag @product.picture, :class => "medium_image" %>
+  <p><strong><%= @product.description %></strong></p>
+  <li><%= @product.cost %></li>
+  <li><%= @product.country_origin %></li>
+
+</div>

@@ -2,10 +2,14 @@
   <li><%= link_to "Add Product", new_product_path %></li>
 <% end %>
 
-<h2>Products:</h2>
-<% @products.each do |product| %>
-  <h4><%= link_to product.name, product_path(product) %></h4>
-  <p><%= product.description %></p>
-  <li><%= product.cost %></li>
-  <li><%= product.country_origin %></li>
-<% end %>
+<div class="fill">
+  <h3>Products:</h3>
+  <% if @products.any? %>
+    <% @products.each do |product| %>
+      <h4><%= link_to product.name, product_path(product) %></h4>
+      <%= image_tag product.picture, :class => "thumb" %>
+    <% end %>
+  <% else %>
+    <h4>It appears that there aren't any products yet!</h4>
+  <% end %>
+</div>
