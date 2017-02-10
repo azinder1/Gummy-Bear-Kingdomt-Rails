@@ -1,4 +1,22 @@
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
-$secondary-color: color("yellow", "base") !default;
+$primary-color: color("pink", "lighten-3") !default;
+$secondary-color: color("blue", "base") !default;
 @import 'materialize';
+
+body {
+    background-image:    url(https://i.ytimg.com/vi/A9cF7-8Ywto/maxresdefault.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+
+}
+
+.content {
+  background-color: rgba(249, 159, 222, 0.9);
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

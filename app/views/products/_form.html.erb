@@ -3,16 +3,16 @@
 <div class="row">
   <div class="col s6">
     <%= form_for @product do |f| %>
-    <%= f.label :name %>
     <%= f.text_field :name %>
-    <%=  f.label :description%>
+    <%= f.label :name %>
     <%=  f.text_field :description%>
-    <%=  f.label :cost %>
+    <%=  f.label :description%>
     <%=  f.text_field :cost%>
-    <%=  f.label :country_origin%>
+    <%=  f.label :cost %>
     <%=  f.text_field :country_origin%>
-
-    <%=  f.submit %>
+    <%=  f.label :country_origin%>
+    <br>
+    <%=  f.submit 'btn', :class => 'btn'%>
 
   </div>
 
