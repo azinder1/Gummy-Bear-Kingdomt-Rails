@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Migration[5.0]
   def change
-    create_table Products do |t|
+    create_table :products do |t|
       t.column :name, :string
       t.column :cost, :string
       t.column :country_origin, :string

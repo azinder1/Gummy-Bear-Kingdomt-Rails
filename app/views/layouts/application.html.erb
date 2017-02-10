@@ -9,6 +9,18 @@
   </head>
 
   <body>
-    <%= yield %>
+   <nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center">Gummy Bear Kingdom</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <%= yield(:navbar) %>
+    </ul>
+  </div>
+</nav>
+ </div>
+ <div class="container">
+   <%= yield %>
+
+ </div>
   </body>
 </html>

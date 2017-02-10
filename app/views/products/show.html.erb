@@ -1,0 +1,9 @@
+<%= content_for(:navbar) do %>
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to "Products", products_path %></li>
+<% end %>
+
+<h4><%= @product.name %></h4>
+<p><strong><%= @product.description %></strong></p>
+<li><%= @product.cost %></li>
+<li><%= @product.country_origin %></li>
