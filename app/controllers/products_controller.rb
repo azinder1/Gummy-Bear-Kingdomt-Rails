@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    views = @product.views + 1
+    @product.update({:views => views})
   end
 
   def new
@@ -13,6 +15,8 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    views = 0
+    @product.update({:views => views})
     if @product.save
       flash[:notice] = "Product successfully added!"
       redirect_to products_path

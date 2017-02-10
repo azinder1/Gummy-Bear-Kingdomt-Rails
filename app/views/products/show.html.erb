@@ -9,7 +9,9 @@
   <h4 title><%= @product.name %></h4>
   <%= image_tag @product.picture, :class => "medium_image" %>
   <p><strong><%= @product.description %></strong></p>
-  <li><%= @product.cost %></li>
-  <li><%= @product.country_origin %></li>
-
+  <ul>
+    <li><%= @product.cost %></li>
+    <li><%= @product.country_origin %></li>  
+  </ul>
+  <p>Total views:<em> <%= @product.views %></em></p>
 </div>
