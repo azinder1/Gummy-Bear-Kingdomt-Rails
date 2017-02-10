@@ -1,0 +1,9 @@
+<%= content_for (:navbar) do %>
+  <li><%= link_to "Home", root_path %></li>
+  <li><%= link_to @product.name, product_path(@product) %></li>
+  <li><%= link_to "Products", products_path %></li>
+<% end %>
+
+<h2>Edit Product</h2>
+
+<%= render 'form' %>
